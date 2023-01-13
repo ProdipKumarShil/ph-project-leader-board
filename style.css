@@ -6,7 +6,19 @@
     margin: 0;
     box-sizing: border-box;
 }
+/* main section */
+body{
+    background-color: #F3F1FF;
+}
+.main-section{
+    display: flex;
+    justify-content: center;
 
+}
+.section-title{
+    color: var(--primary-color);
+    margin-bottom: 35px;
+}
 /* Header style */
 
 .header{
@@ -35,3 +47,25 @@
     color: white;
 }
 
+/* main section styling */
+.player-blog-section{
+    background-color: #fff;
+    width: 870px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    width: 56px;
+    height: 56px;
+    margin-right: 20px;
+}
+.players-section{
+    padding: 40px;
+}
