@@ -17,7 +17,6 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 .section-title{
     color: var(--primary-color);
@@ -45,6 +44,10 @@ hr{
     justify-content: space-around;
     color: white;
     padding: 20px;
+}
+.logo h4{
+    font-size: 30px;
+    font-weight: 400;
 }
 .logo, .nav{
     display: flex;
@@ -174,4 +177,51 @@ hr{
     padding: 5px 8px;
     color: #FF4A60;
     border-radius: 15px;
+}
+/* Mobile device */
+@media only screen and (max-width: 688px) {
+    .logo{
+        display: none;
+    }
+    .links{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+    }
+    .player-blog-section{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog{
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    .blog img{
+        width: 100%;
+        height: auto;
+    }
+    .blog-info{
+        margin-left: 10px;
+    }
+    .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .course-section{
+        width: 100%;
+    }
+    .course{
+        width: auto;
+        height: auto;
+    }
+    .course img{
+        width: 100%;
+        height: auto;
+    }
 }
