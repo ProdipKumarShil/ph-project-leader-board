@@ -19,6 +19,12 @@ body{
     color: var(--primary-color);
     margin-bottom: 35px;
 }
+hr{
+    width: 95%;
+    margin: 1px auto;
+    color: #D1D1D1;
+    margin-bottom: 40px;
+}
 /* Header style */
 
 .header{
@@ -48,6 +54,7 @@ body{
 }
 
 /* main section styling */
+
 .player-blog-section{
     background-color: #fff;
     width: 870px;
@@ -67,5 +74,31 @@ body{
     margin-right: 20px;
 }
 .players-section{
-    padding: 40px;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+/* blog styling */
+.blogs-section{
+    margin: 40px 30px;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+    grid-column-gap: 45px;
+}
+.blog{
+    display: flex;
+    align-items: center;
+}
+.blog img{
+    width: 177px;
+    height: 117px;
+}
+.blog-info{
+    margin-left: 17px;
+}
+.author{
+    color: #9F9F9F;
 }
